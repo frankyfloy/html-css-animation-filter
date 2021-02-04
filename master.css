@@ -1,0 +1,230 @@
+/* ******** esercizio 1 ******** */
+.ex-1-square:hover{
+    transition: background 2s ease;
+    background-color: red;
+}
+
+
+
+
+/* ******** esercizio 2 ******** */
+.ex-2-square:active{
+    padding-right: 100%;
+    transition: padding 5s;
+}
+
+
+
+
+/* ******** esercizio 3 ******** */
+.ex-3-square:hover{
+    border-radius: 50%;
+    transition: border-radius 3s;
+}
+
+
+
+/* ******** esrcizio 4 ******** */
+.ex-4-square:hover{
+    animation-name: ghost;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes ghost {
+  0%   {filter: opacity(1);}
+  25%  {filter: opacity(0.75);}
+  50%  {filter: opacity(0.5);}
+  75% {filter: opacity(0.25);}
+  100% {filter: opacity(0);}
+}
+
+
+
+
+
+/* ******** esercizio 5 ******** */
+.ex-5-square:active{
+    padding: 5%;
+    transition: padding 2s;
+}
+
+.ex-5-square:hover{
+    width: 50px;
+    height: 50px;
+    transition: width 2s ease 1s,height 2s ease 1s;
+}
+
+.ex-5-square:active{
+    padding: 50px;
+    transition: padding 4s ease 1s;
+}
+
+
+
+/* ******** esercizio 6 ******** */
+.ex-6-img:hover{
+    filter: invert(75%);
+}
+
+
+
+/* ******** esercizio 7 ******** */
+.ex-7-img:hover{
+    filter: saturate(30%);
+    filter: sepia(60%);
+    transition: filter 2s linear;
+}
+
+
+
+/* ******** esercizio 8 ******** */
+.ex-8-img:hover{
+    border-radius: 10px;
+    filter: saturate(30%);
+    filter: sepia(60%);
+    transition: filter 3s,
+    border-radius 3s;
+}
+
+
+/* ******** esercizio 9 ******** */
+.ex-9-img:hover{
+    border-radius: 10px;
+
+    filter: saturate(30%);
+    filter: sepia(60%);
+
+    width: 200px;
+    height: 120px;
+    transition: all 4s;
+}
+
+
+/* ******** esercizio 10 ******** */
+.ex-10-icon{
+    animation-name: turn;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes turn{
+  0%   {transform:rotate(0deg);}
+  25%  {transform: rotate(90deg);}
+  50%  {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+
+
+/* ******** esercizio 11 ******** */
+.ex-11-icon:hover{
+    animation-name: turn-3-4°;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes turn-3-4°{
+  0%   {transform:rotate(0deg);}
+  14%  {transform: rotate(90deg);}
+  28%  {transform: rotate(180deg);}
+  56% {transform: rotate(270deg);}
+  75% {transform: rotate(90deg);}
+  100% {transform: rotate(0deg);}
+}
+
+
+/* ******** esercizio 12 ******** */
+
+
+.ex-12-top-white, .ex-12-bottom-white{
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+}
+.ex-12-top-white{
+    animation-name: border-button-reactive-top;
+}
+
+.ex-12-bottom-white{
+    animation-name: border-button-reactive-bot;
+}
+
+@keyframes border-button-reactive-top{
+0% {top: -10px;left: 0%;}
+
+15% {top: -10px;left: 25%;}
+
+30% {top: -10px;left: 50%;}
+
+45% {top: -10px;left: 75%;}
+
+60% {top: -10px;left: 100%;}
+
+70% {top: -10px;left: 75%;}
+
+80% {top: -10px;left: 50%;}
+
+90% {top: -10px;left: 25%;}
+
+100% {top: -10px;left: 0%;}
+}
+
+@keyframes border-button-reactive-bot{
+0% {bottom: -10px;right: 0%;}
+
+15% {bottom: -10px;right: 25%;}
+
+30% {bottom: -10px;right: 50%;}
+
+45% {bottom: -10px;right: 75%;}
+
+60% {bottom: -10px;right: 100%;}
+
+70% {bottom: -10px;right: 75%;}
+
+80% {bottom: -10px;right: 50%;}
+
+90% {bottom: -10px;right: 25%;}
+
+100% {bottom: -10px;right: 0%;}
+}
+
+
+
+/* ******** esercizio 12 ******** */
+
+.ex-13-top-white, .ex-13-bottom-white{
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+.ex-13-top-white{
+    animation-name: border-button-reactive-top-circle;
+}
+
+.ex-13-bottom-white{
+    animation-name: border-button-reactive-bot-circle;
+}
+
+@keyframes border-button-reactive-top-circle{
+0% {left: 10%;top: -10px;}
+30% { left: calc(100% - 30px);top: -10px;}
+45% {left: calc(100% - 30px);top: 100%;}
+75% {left: 0;top: 100%;}
+90% {left: -10px;top: -10px;}
+100% {left: 10%;top: -10px;}
+}
+
+@keyframes border-button-reactive-bot-circle{
+0% {bottom: -10px;right: 10%;}
+30% {right: calc(100% - 30px); bottom: -10px;}
+45% {right: calc(100% - 30px);bottom: 100%;}
+75% {right: 0;bottom: 100%;}
+90% {right: -10px;bottom: -10px;}
+100% {right: 10%;bottom: -10px;}
+}
