@@ -43,24 +43,18 @@
 
 
 
-/* ******** esercizio 5 ******** */
-.ex-5-square:active{
-    padding: 5%;
-    transition: padding 2s;
+/* ******** esercizio 5 ******** */---------Errore----
+.ex-5-square{
+    transition:  1s;
 }
 
 .ex-5-square:hover{
-    width: 50px;
-    height: 50px;
-    transition: width 2s ease 1s,height 2s ease 1s;
+    transform: scale(1.2);
 }
 
 .ex-5-square:active{
-    padding: 50px;
-    transition: padding 4s ease 1s;
+    transform: scale(0.8);
 }
-
-
 
 /* ******** esercizio 6 ******** */
 .ex-6-img:hover{
@@ -88,17 +82,19 @@
 }
 
 
-/* ******** esercizio 9 ******** */
+/* ******** esercizio 9 ******** */ ---------- ERRORE
+.ex-9-img{
+
+    transition: all 1s ease-in-out 2s;
+}
+
 .ex-9-img:hover{
     border-radius: 10px;
-
     filter: saturate(30%);
     filter: sepia(60%);
-
-    width: 200px;
-    height: 120px;
-    transition: all 4s;
+    transform: scale(2);
 }
+
 
 
 /* ******** esercizio 10 ******** */
